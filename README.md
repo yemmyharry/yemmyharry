@@ -1,6 +1,6 @@
 ### Hi there 👋, I am Yemi
 
-<img src="https://giphy.com/gifs/cVpZlSOxmLSX91SOvq/html5" alt="yemi's image saying he's a fullstack developer">
+<img src="https://media.giphy.com/media/cVpZlSOxmLSX91SOvq/giphy.gif" alt="yemi's image saying he's a fullstack developer">
 
 
 - 🔭 I’m currently working on becoming a world class full-stack developer by taking on amazing projects.
