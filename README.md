@@ -1,5 +1,9 @@
 ### Hi there 👋, I am Yemi
 
+![](https://img.shields.io/github/last-commit/yemmyharry/yemmyharry?&style=flat-square)
+![](https://img.shields.io/github/followers/yemmyharry?label=Followers&style=flat-square)
+![Profile views](https://gpvc.arturio.dev/yemmyharry)
+
 <img src="https://media.giphy.com/media/cVpZlSOxmLSX91SOvq/giphy.gif" alt="yemi's image saying he's a fullstack developer">
 
 
@@ -13,5 +17,7 @@
 
 
 ![Github stats](https://github-readme-stats.vercel.app/api?username=yemmyharry&theme=highcontrast&show_icons=true&count_private=true)
+<br />
 ![Top Languages Card](https://github-readme-stats.vercel.app/api/top-langs/?username=yemmyharry&layout=compact)
+<br />
 ![Jokes Card](https://readme-jokes.vercel.app/api)
