@@ -12,7 +12,7 @@
 - 👯 I’m looking to collaborate on any interesting project.
 - 💬 Ask me about anything.
 - 📫 How to reach me: <a href="https://twitter.com/@yemmyharry">@yemmyharry</a>
-- 😄 Pronouns: He/Him
+- 😄 Pronouns: He/Him/His
 - ⚡ Fun fact: Christian and Stoic
 
 
