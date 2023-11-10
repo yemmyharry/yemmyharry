@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/github/last-commit/yemmyharry/yemmyharry?&style=flat-square)
 ![](https://img.shields.io/github/followers/yemmyharry?label=Followers&style=flat-square) 
-![Profile views](https://gpvc.arturio.dev/yemmyharry) 
+<!-- ![Profile views](https://gpvc.arturio.dev/yemmyharry) -->
 
  <!-- <img src="https://media.giphy.com/media/vhFvISxyU1lFjDCXLn/giphy.gif" alt="yemi's image saying he's a fullstack developer"> -->
 
