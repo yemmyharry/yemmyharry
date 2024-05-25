@@ -1,6 +1,6 @@
 ### Hi there 👋, I am Yemi
 
-![](https://img.shields.io/github/last-commit/yemmyharry/yemmyharry?&style=flat-square)
+<!--  ![](https://img.shields.io/github/last-commit/yemmyharry/yemmyharry?&style=flat-square)  -->
 ![](https://img.shields.io/github/followers/yemmyharry?label=Followers&style=flat-square) 
 <!-- ![Profile views](https://gpvc.arturio.dev/yemmyharry) -->
 
