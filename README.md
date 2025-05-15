@@ -8,7 +8,7 @@
 
 
 - 🔭 I’m currently working on becoming a world class full-stack developer by taking on amazing projects.
-- 🌱 I’m currently learning Bitcoin and Lightening Development.
+- 🌱 I’m currently learning Bitcoin and Lightning Development.
 - 👯 I’m looking to collaborate on any interesting project.
 - 💬 Ask me about anything.
 - 📫 How to reach me: <a href="https://twitter.com/@yemmyharry">@yemmyharry</a>
