@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="124" viewBox="0 0 560 124" role="img" aria-labelledby="title desc">
+<title id="title">Open source, in numbers</title>
+<desc id="desc">10 merged public pull requests across 10 repositories outside my own account.</desc>
+<rect x="1" y="1" width="558" height="122" rx="16" fill="#0d1117" stroke="#30363d"/>
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+<text x="24" y="43" fill="#a78bfa" font-size="30" font-weight="700">10</text>
+<text x="24" y="68" fill="#e6edf3" font-size="13">Merged public PRs</text>
+<path d="M270 22V77" stroke="#30363d"/>
+<text x="294" y="43" fill="#34d399" font-size="30" font-weight="700">10</text>
+<text x="294" y="68" fill="#e6edf3" font-size="13">Repositories contributed to</text>
+<text x="24" y="103" fill="#9da7b3" font-size="11">Outside my own repositories · refreshed weekly</text>
+</g></svg>

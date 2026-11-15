@@ -1,10 +1,11 @@
-"""Generate a language card from the primary language of each public repository."""
+"""Generate language and contribution cards using public GitHub data."""
 
 import json
 import os
 from collections import Counter
 from html import escape
 from pathlib import Path
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 USERNAME = "yemmyharry"
@@ -22,8 +23,7 @@ COLORS = {
 }
 
 
-def fetch_languages():
-    counts = Counter()
+def github_json(path):
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "yemmyharry-profile",
@@ -31,14 +31,18 @@ def fetch_languages():
     }
     if token := os.environ.get("GITHUB_TOKEN"):
         headers["Authorization"] = f"Bearer {token}"
+    request = Request(f"https://api.github.com/{path}", headers=headers)
+    with urlopen(request, timeout=30) as response:
+        return json.load(response)
+
+
+def fetch_languages():
+    counts = Counter()
     page = 1
     while True:
-        request = Request(
-            f"https://api.github.com/users/{USERNAME}/repos?per_page=100&page={page}",
-            headers=headers,
+        repos = github_json(
+            f"users/{USERNAME}/repos?per_page=100&page={page}"
         )
-        with urlopen(request, timeout=30) as response:
-            repos = json.load(response)
         for repo in repos:
             if not repo["fork"] and not repo["archived"] and repo["language"]:
                 counts[repo["language"]] += 1
@@ -48,6 +52,44 @@ def fetch_languages():
     if not counts:
         raise ValueError("No language data found; preserving the existing card")
     return counts
+
+
+def fetch_contributions():
+    repositories = set()
+    page = 1
+    seen = 0
+    while True:
+        params = urlencode({
+            "q": f"author:{USERNAME} is:pr is:merged is:public -user:{USERNAME}",
+            "per_page": 100,
+            "page": page,
+        })
+        data = github_json(f"search/issues?{params}")
+        if data["incomplete_results"] or data["total_count"] > 1000:
+            raise ValueError("Incomplete contribution data; preserving existing cards")
+        repositories.update(item["repository_url"] for item in data["items"])
+        seen += len(data["items"])
+        if seen >= data["total_count"]:
+            return data["total_count"], len(repositories)
+        if not data["items"]:
+            raise ValueError("Missing contribution results; preserving existing cards")
+        page += 1
+
+
+def render_contributions(merged, repositories):
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="560" height="124" viewBox="0 0 560 124" role="img" aria-labelledby="title desc">
+<title id="title">Open source, in numbers</title>
+<desc id="desc">{merged} merged public pull requests across {repositories} repositories outside my own account.</desc>
+<rect x="1" y="1" width="558" height="122" rx="16" fill="#0d1117" stroke="#30363d"/>
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+<text x="24" y="43" fill="#a78bfa" font-size="30" font-weight="700">{merged}</text>
+<text x="24" y="68" fill="#e6edf3" font-size="13">Merged public PRs</text>
+<path d="M270 22V77" stroke="#30363d"/>
+<text x="294" y="43" fill="#34d399" font-size="30" font-weight="700">{repositories}</text>
+<text x="294" y="68" fill="#e6edf3" font-size="13">Repositories contributed to</text>
+<text x="24" y="103" fill="#9da7b3" font-size="11">Outside my own repositories · refreshed weekly</text>
+</g></svg>
+'''
 
 
 def render(counts):
@@ -95,6 +137,11 @@ def render(counts):
 
 if __name__ == "__main__":
     languages = fetch_languages()
+    merged, repositories = fetch_contributions()
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(render(languages), encoding="utf-8")
+    OUTPUT.with_name("contributions.svg").write_text(
+        render_contributions(merged, repositories), encoding="utf-8"
+    )
     print(f"Updated {OUTPUT.name}: {sum(languages.values())} repositories")
+    print(f"Updated contributions.svg: {merged} merged PRs across {repositories} repositories")
