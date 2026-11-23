@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="328" viewBox="0 0 560 328" role="img" aria-labelledby="title desc">
 <title id="title">Languages across my public repositories</title>
-<desc id="desc">Primary language per original, non-archived public repository. JavaScript: 32 repositories; Go: 27 repositories; CSS: 4 repositories; HTML: 4 repositories; TypeScript: 3 repositories; C: 1 repositories.</desc>
+<desc id="desc">Primary language per original, non-archived public repository. JavaScript: 32 repositories; Go: 27 repositories; HTML: 5 repositories; CSS: 3 repositories; TypeScript: 3 repositories; C: 1 repositories.</desc>
 <rect x="1" y="1" width="558" height="326" rx="16" fill="#0d1117" stroke="#30363d"/>
 <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
 <text x="24" y="35" fill="#f0f6fc" font-size="18" font-weight="600">Languages in the mix</text>
@@ -15,16 +15,16 @@
 <rect x="158" y="115" width="222" height="10" rx="5" fill="#21262d"/>
 <rect x="158" y="115" width="187.3" height="10" rx="5" fill="#00ADD8"/>
 <text x="404" y="127" fill="#9da7b3" font-size="12">27 repos · 36%</text>
-<circle cx="29" cy="159" r="5" fill="#a78bfa"/>
-<text x="44" y="163" fill="#e6edf3" font-size="13">CSS</text>
+<circle cx="29" cy="159" r="5" fill="#e34c26"/>
+<text x="44" y="163" fill="#e6edf3" font-size="13">HTML</text>
 <rect x="158" y="151" width="222" height="10" rx="5" fill="#21262d"/>
-<rect x="158" y="151" width="27.8" height="10" rx="5" fill="#a78bfa"/>
-<text x="404" y="163" fill="#9da7b3" font-size="12">4 repos · 5%</text>
-<circle cx="29" cy="195" r="5" fill="#e34c26"/>
-<text x="44" y="199" fill="#e6edf3" font-size="13">HTML</text>
+<rect x="158" y="151" width="34.7" height="10" rx="5" fill="#e34c26"/>
+<text x="404" y="163" fill="#9da7b3" font-size="12">5 repos · 7%</text>
+<circle cx="29" cy="195" r="5" fill="#a78bfa"/>
+<text x="44" y="199" fill="#e6edf3" font-size="13">CSS</text>
 <rect x="158" y="187" width="222" height="10" rx="5" fill="#21262d"/>
-<rect x="158" y="187" width="27.8" height="10" rx="5" fill="#e34c26"/>
-<text x="404" y="199" fill="#9da7b3" font-size="12">4 repos · 5%</text>
+<rect x="158" y="187" width="20.8" height="10" rx="5" fill="#a78bfa"/>
+<text x="404" y="199" fill="#9da7b3" font-size="12">3 repos · 4%</text>
 <circle cx="29" cy="231" r="5" fill="#3178c6"/>
 <text x="44" y="235" fill="#e6edf3" font-size="13">TypeScript</text>
 <rect x="158" y="223" width="222" height="10" rx="5" fill="#21262d"/>
