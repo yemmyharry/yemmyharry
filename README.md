@@ -2,7 +2,7 @@
 
 I build software for commerce, payments, and Bitcoin — from the services behind a product to the interfaces people use.
 
-![Bitcoin](assets/bitcoin.svg) ![Lightning](assets/lightning.svg) ![Open source](assets/open-source.svg)
+![Bitcoin](https://img.shields.io/badge/Bitcoin-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white) ![Lightning](https://img.shields.io/badge/Lightning-7C3AED?style=for-the-badge&logo=lightning&logoColor=white) ![Open source](https://img.shields.io/badge/Open_source-15803D?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
 
 ### These days
 
@@ -12,6 +12,7 @@ I build software for commerce, payments, and Bitcoin — from the services behin
 
 Beyond code: Christian, drawn to Stoic philosophy, and always learning.
 
-[![Merged public pull requests and repositories contributed to, updated automatically](assets/contributions.svg)](https://github.com/search?q=author%3Ayemmyharry+is%3Apr+is%3Amerged+is%3Apublic+-user%3Ayemmyharry&type=pullrequests)
-
-![Languages across my public repositories, updated automatically](assets/languages.svg)
+<p>
+  <img height="180" alt="GitHub activity: commits, pull requests, merged pull requests, and repositories contributed to" src="https://github-readme-stats.vercel.app/api?username=yemmyharry&amp;show_icons=true&amp;hide_rank=true&amp;hide=stars,issues&amp;show=prs_merged&amp;theme=tokyonight&amp;hide_border=true&amp;custom_title=GitHub%20activity" />
+  <img height="180" alt="Most used languages across my public repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yemmyharry&amp;layout=compact&amp;langs_count=8&amp;theme=tokyonight&amp;hide_border=true" />
+</p>
